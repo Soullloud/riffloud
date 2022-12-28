@@ -7,8 +7,8 @@ import jakarta.persistence.OneToMany
 
 @Entity
 open class Course(
-    @Id @GeneratedValue val id: Int,
-    val name: String,
-    val description: String,
-    @OneToMany val lessons: List<Lesson>
+    @Id @GeneratedValue open val id: Int,
+    open val name: String,
+    open val description: String,
+    @OneToMany open val lessons: List<Lesson>
 )

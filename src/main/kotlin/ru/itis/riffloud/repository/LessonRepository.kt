@@ -8,6 +8,6 @@ import ru.itis.riffloud.model.Lesson
 @Repository
 interface LessonRepository: JpaRepository<Lesson, Int> {
 
-    @Query("select l from Course c join c.lessons l where c.id = :id")
+    @Query("select l from Course c join c.lessons l where c.id = :courseId")
     fun findLessonsByCourseId(courseId: Int): List<Lesson>
 }
