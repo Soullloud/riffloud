@@ -6,12 +6,12 @@ import jakarta.persistence.Id
 
 @Entity
 open class Student(
-    @Id @GeneratedValue val id: Int,
-    val username: String,
-    val email: String,
-    val password: String,
-    val firstName: String?,
-    val lastName: String?,
-    val city: String?,
-    val country: String?
+    @Id @GeneratedValue open val id: Int,
+    open val username: String,
+    open val email: String,
+    open val password: String,
+    open val firstName: String?,
+    open val lastName: String?,
+    open val city: String?,
+    open val country: String?
 )

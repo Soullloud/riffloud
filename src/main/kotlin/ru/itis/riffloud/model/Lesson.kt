@@ -6,7 +6,7 @@ import jakarta.persistence.Id
 
 @Entity
 open class Lesson(
-    @Id @GeneratedValue val id: Int,
-    val name: String,
-    val description: String
+    @Id @GeneratedValue open val id: Int,
+    open val name: String,
+    open val description: String
 )
